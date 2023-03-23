@@ -17,6 +17,6 @@ class FileModified():
                 if self.callback():
                     break
 
-file = FileModified('test.txt', lambda: os.system('cmd /k "git add . && git commit -m "test" && git pull orgin master && git push orgin master"'))
+file = FileModified('test.txt', lambda: os.system('cmd /c "git add . && git commit -m "test" && git pull orgin master && git push orgin master"'))
 file.start()
 
