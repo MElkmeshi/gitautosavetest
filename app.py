@@ -1,7 +1,6 @@
 import os
 import time
-import traceback
-
+import glob
 class FileModified():
     def __init__(self, file_path, callback):
         self.file_path = file_path
@@ -17,6 +16,11 @@ class FileModified():
                 if self.callback():
                     break
 
-file = FileModified('test.txt', lambda: os.system('cmd /c "git add . && git commit -m "test" && git push orgin master"'))
-file.start()
+def fileprosses():
+    os.system('cmd /c "git add . && git commit -m "test" && git push orgin master"')
+    print("fileprosses"
 
+files = [i for i in glob.glob('*')]
+for i in files:
+    file = FileModified(i, fileprosses)
+    file.start()
