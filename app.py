@@ -26,5 +26,5 @@ dir_path = "./"
 for file_name in os.listdir(dir_path):
     if os.path.isfile(os.path.join(dir_path, file_name)):
         file_path = os.path.join(dir_path, file_name)
-        file = FileModified(file_path, lambda: os.system('cmd /c "git add . && git commit -m "test" && git push orgin master"'))
+        file = FileModified(file_path, lambda: os.system('cmd /c "git add . && git commit -m "Auto Commit" && git push orgin master"'))
         file.start()
