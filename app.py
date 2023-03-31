@@ -18,6 +18,7 @@ class FileModified():
                     break
 
 dir_path = "C:\\Users\\melkmeshi\\Documents\\Projects\\Python\\git"
+
 for file_name in os.listdir(dir_path):
     if os.path.isfile(os.path.join(dir_path, file_name)):
         file_path = os.path.join(dir_path, file_name)
