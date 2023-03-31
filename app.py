@@ -24,4 +24,4 @@ files = [i for i in glob.glob('*')]
 for i in files:
     file = FileModified(i, fileprosses)
     print("file: ", i)
-file.start()
+    file.start()
