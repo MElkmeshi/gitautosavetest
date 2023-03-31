@@ -18,7 +18,7 @@ class FileModified():
 
 def fileprosses():
     os.system('cmd /c "git add . && git commit -m "test" && git push orgin master"')
-    print("fileprosses"
+    print("fileprosses")
 
 files = [i for i in glob.glob('*')]
 for i in files:
