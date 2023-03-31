@@ -1,5 +1,6 @@
 import os
 import time
+import threading
 
 class FileModified():
     def __init__(self, file_path, callback):
