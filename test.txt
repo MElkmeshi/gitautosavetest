@@ -1,4 +1,3 @@
 from my pc: what's up?
 
- 
-from github: nothing much.
+from github: nothng much.

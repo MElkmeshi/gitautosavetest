@@ -23,4 +23,5 @@ def fileprosses():
 files = [i for i in glob.glob('*')]
 for i in files:
     file = FileModified(i, fileprosses)
-    file.start()
+    print("file: ", i)
+file.start()
