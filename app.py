@@ -21,7 +21,6 @@ class FileModified(threading.Thread):
 
     def stop(self):
         self.stop_event.set()
-
 dir_path = "./"
 
 for file_name in os.listdir(dir_path):
