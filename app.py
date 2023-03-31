@@ -1,6 +1,5 @@
 import os
 import time
-import traceback
 import threading
 
 class FileModified(threading.Thread):
@@ -23,7 +22,7 @@ class FileModified(threading.Thread):
     def stop(self):
         self.stop_event.set()
 
-dir_path = "C:\\Users\\melkmeshi\\Documents\\Projects\\Python\\git"
+dir_path = "./"
 
 for file_name in os.listdir(dir_path):
     if os.path.isfile(os.path.join(dir_path, file_name)):
